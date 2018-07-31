@@ -1,0 +1,51 @@
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="http://pngimg.com/uploads/popcorn/popcorn_PNG14.png">
+    
+        <title>Moviaty - Movies search engine!</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- FontAwesome! -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+        <!-- Custom styles for this template -->
+        <!-- <link href="cover.css" rel="stylesheet"> -->
+
+      </head>
+
+      <body>
+        <div class="container">
+            
+            <header class="jumbotron">
+                <h1>Movies in theatre!</h1>        
+            </header>
+
+            <div class="rowrow text-center"  style="display: flex; flex-wrap: wrap;">
+                
+                <% movies.forEach(function(movie){ %>
+                    <div class="col-md-3 col-sm-6">
+
+                        <div class="thumbnail">               
+                            <img src="http://image.tmdb.org/t/p/w780/<%= movie.poster_path %>" class="img-thumbnail"/>
+
+                            <div class="caption">
+                                <p>
+                                    <%= movie.title %>
+                                    <br>
+                                    <%= movie.release_date %>
+                                </p>
+                            </div>   
+
+                        </div>               
+                        
+                    </div>
+                <% }) %>
+
+            </div>
+        </div>
+    </body>

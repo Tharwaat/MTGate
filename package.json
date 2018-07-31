@@ -1,0 +1,17 @@
+{
+  "name": "mtgate",
+  "version": "1.0.0",
+  "description": "A place where you can search for movies.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "A.Tharwat",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.87.0"
+  }
+}
