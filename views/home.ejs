@@ -6,49 +6,47 @@
     <meta name="author" content="">
     <link rel="icon" href="http://pngimg.com/uploads/popcorn/popcorn_PNG14.png">
 
-    <title>Moviaty - Movies search engine!</title>
+    <title>MTGate - All about Movies and Tv Shows!</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
+    <!-- Semantic ui-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/menu.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/container.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/header.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/card.min.css" />
+    
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
     <!-- FontAwesome! -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+    
+
   </head>
 
   <body class="text-center">
+      <div class="navbar">
+        <nav>
+            <div class="logo">MTGate</div>
+        </nav>
+      </div>
+      
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Moviaty</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
+    <div class="ui container">
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Looking for a movie?<br> find it here!.</h1>
         
-        <form method="POST" action="/search">
-          <div class="form-group">
-            <input name="title" class="form-control" placeholder="Movie or Series name" />
-            <br>
-            <button type="submit" class="btn btn-dark">Find it!</button>
-          </div>                
-        </form>
 
         <p class="lead">
-            <a href="/theater">
-                <button id="randombtn">What to watch tonight?!</button> 
+            <a href="/on_theater">
+                <button id="randombtn">Movies on Theater</button> 
             </a> 
         </p>
-      </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
@@ -61,6 +59,8 @@
     </div>
 
 
+    <!--Scripts-->
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -68,7 +68,10 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script> -->
+    
+    
 
+    
   </body>
 </html>
 

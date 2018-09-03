@@ -1,0 +1,53 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="http://pngimg.com/uploads/popcorn/popcorn_PNG14.png">
+    
+        <title>Moviaty - Movies search engine!</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Semantic ui-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/menu.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/container.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/header.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/card.min.css" />
+        
+        <!-- FontAwesome! -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+        <!-- Custom styles for this template -->
+        <!-- <link href="show.css" rel="stylesheet"> -->
+
+      </head>
+
+      <body>
+        <div class="ui secondary pointing menu">
+            <a class="active item">
+                Home
+            </a>
+            <a class="item">
+                Messages
+            </a>
+            <a class="item">
+                Friends
+            </a>
+            <div class="right menu">
+                <a class="ui item">
+                Logout
+                </a>
+            </div>
+        </div>
+        
+        
+
+        <div class=" ui container">
+            <div id="background" >
+                <h1><%= movie.title%></h1>
+                <img class="ui image" src="http://image.tmdb.org/t/p/w1280/<%= movie.backdrop_path %>" width="100%" >
+            </div>    
+        </div>
+    </body>
